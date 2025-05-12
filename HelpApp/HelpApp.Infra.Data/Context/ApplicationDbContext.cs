@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
+
 namespace HelpApp.Infra.Data.Context
 {
     public class ApplicationDbContext : DbContext
@@ -15,7 +16,6 @@ namespace HelpApp.Infra.Data.Context
         {
             base.OnModelCreating(builder);
             builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
-
         }
     }
 }
