@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HelpApp.Domain\HelpApp.Domain.csproj" />
+    <ProjectReference Include="..\HelpApp.Infra.Data\HelpApp.Infra.Data.csproj" />
+    <ProjectReference Include="..\HelpApp.Infra.IoC\HelpApp.Infra.IoC.csproj" />
+  </ItemGroup>
+
 </Project>
