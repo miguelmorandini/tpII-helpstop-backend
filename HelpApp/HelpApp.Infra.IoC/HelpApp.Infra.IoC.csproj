@@ -7,10 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.20" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\HelpApp.Application\HelpApp.Application.csproj" />
     <ProjectReference Include="..\HelpApp.Infra.Data\HelpApp.Infra.Data.csproj" />
   </ItemGroup>
 
